@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+}
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #141c27;
+}
+.head ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.head ul li a {
+  color: white;
+  font-size: 14px;
+  transition: 0, 4s linear;
+  &:hover {
+    color: #55e6a5;
+  }
+}
+.head div {
+  background: #55e6a5;
+  padding: 24px;
+  font-size: 24px;
+}
+@media only screen and (max-width: 820px) {
+  .head ul {
+    display: none;
+  }
+  .head .container {
+    max-width: 820px;
+  }
+}
+@media only screen and (max-width: 717px) {
+  .head ul {
+    display: none;
+  }
+  .head .container {
+    max-width: 717px;
+  }
+}
+@media only screen and (max-width: 626px) {
+  .head ul {
+    display: none;
+  }
+  .head .container {
+    max-width: min-content;
+  }
+}
